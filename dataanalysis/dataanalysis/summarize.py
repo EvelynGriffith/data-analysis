@@ -30,28 +30,26 @@ def compute_median(numbers: List[float]) -> float:
     # as long as the computation will not be an
     # undefined division by zero, compute the median
     # case: the count of the values is even
-    if n in numbers != 0:
-        if n % 2 == 0:
-            # get the two indices that are before and after the middle
-            # convert to an integer to prepare for indexing
-            # adjust for the fact that lists index starting at 0
-            m1 = n/2
-            m2 = (n/2) + 1
-            m1 = int(m1) - 1
-            m2 = int(m2) - 1
-            # compute the median value
-            median = (numbers[m1] + numbers[m2])/2
-        else:
-            # case: the count of the values is odd
-            m = (n+1)/2
-            # convert to an integer to prepare for indexing
-            # adjust for the fact that lists index starting at 0
-            m = int(m) - 1
-            median = numbers[m]
-            # if the list was empty, then return a median that is "not a number"
-        # return the computed median value
-        return median
-    return float("Nan")
+    if n % 2 == 0:
+        # get the two indices that are before and after the middle
+        # convert to an integer to prepare for indexing
+        # adjust for the fact that lists index starting at 0
+        m1 = n/2
+        m2 = (n/2) + 1
+        m1 = int(m1) - 1
+        m2 = int(m2) - 1
+        # compute the median value
+        median = (numbers[m1] + numbers[m2])/2
+    else:
+        # case: the count of the values is odd
+        m = (n+1)/2
+        # convert to an integer to prepare for indexing
+        # adjust for the fact that lists index starting at 0
+        m = int(m) - 1
+        median = numbers[m]
+        # if the list was empty, then return a median that is "not a number"
+    # return the computed median value
+    return median
 
 def compute_difference(numbers: List[float]) -> List[float]:
     """Compute difference for each value from the calculated mean."""
@@ -62,7 +60,7 @@ def compute_difference(numbers: List[float]) -> List[float]:
     diff = []
     for num in numbers:
         diff.append(num-mean)
-    return diff
+    return (diff)
     # compute the differences from the mean
     # return the computed differences from the mean
 
@@ -75,7 +73,7 @@ def compute_variance(numbers: List[float]) -> float:
     for d in diff:
         squared_diff.append(d**2)
     sum_squared_diff = sum(squared_diff)
-    variance = sum_squared_diff/len(numbers))
+    variance = sum_squared_diff/len(numbers)
     return variance
     # compute the squared differences
     # calculate the variance

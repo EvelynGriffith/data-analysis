@@ -6,7 +6,6 @@ import typer
 
 from dataanalysis import summarize
 from dataanalysis import transform
-from dataanalysis.dataanalysis.summarize import compute_mean, compute_median, compute_standard_deviation, compute_variance
 
 from rich.console import Console
 
@@ -39,26 +38,26 @@ def main(
         # transform the data from a list of textual values to a list of numerical values
         data_list = transform.transform_string_to_number_list(data_text)
         # compute the mean from the list of numerical values
-        commean = compute_mean(data_list)
+        commean = summarize.compute_mean(data_list)
         console.print("")
         console.print(":abacus: Here are the results of the data analysis:")
         # display the computed mean in the terminal window
-        console.print(
-        console.print(f"The computed mean is {commean}!")
-        )
+        console.print()
+        console.print(f"The computed mean is {round(commean, 2)}!")
         # compute the median from the list of numerical values
-        commedian = compute_median(data_list)
+        commedian = summarize.compute_median(data_list)
         # display the computed median in the terminal window
-        console.print(f"The computed median is {commedian}!")
+        console.print(f"The computed median is {round(commedian, 2)}!")
+        console.print()
         # compute the variance from the list of numerical values
-        comvariance = compute_variance(data_list)
+        comvariance = summarize.compute_variance(data_list)
         # display the computed variance in the terminal window
-        console.print(f"The computed variance is {comvariance}!")
+        console.print(f"The computed variance is {round(comvariance, 2)}!")
         # compute the standard deviation from the list of numerical values
-        comstanddev = compute_standard_deviation(data_list)
+        comstanddev = summarize.compute_standard_deviation(data_list)
         # display the computed standard deviation in the terminal window
-        console.print(f"The computed standard deviation is {comstanddev}!")
-        # TODO: make sure that you display all floating-point numbers with
+        console.print(f"The computed standard deviation is {round(comstanddev, 2)}!")
+        # make sure that you display all floating-point numbers with
         # exactly two decimal places (see the expected output for details)
         console.print("")
         console.print(
