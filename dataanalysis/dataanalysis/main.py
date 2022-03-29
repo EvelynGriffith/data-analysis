@@ -40,13 +40,19 @@ def main(
         # TODO: compute the mean from the list of numerical values
         console.print("")
         console.print(":abacus: Here are the results of the data analysis:")
-        # TODO: display the computed mean in the terminal window
+        # display the computed mean in the terminal window
+        console.print(
+        console.print(f"The computed mean is {}!")
+        )
         # TODO: compute the median from the list of numerical values
-        # TODO: display the computed median in the terminal window
+        # display the computed median in the terminal window
+        console.print(f"The computed median is {}!")
         # TODO: compute the variance from the list of numerical values
-        # TODO: display the computed variance in the terminal window
+        # display the computed variance in the terminal window
+        console.print(f"The computed variance is {}!")
         # TODO: compute the standard deviation from the list of numerical values
-        # TODO: display the computed standard deviation in the terminal window
+        # display the computed standard deviation in the terminal window
+        console.print(f"The computed standard deviation is {}!")
         # TODO: make sure that you display all floating-point numbers with
         # exactly two decimal places (see the expected output for details)
         console.print("")

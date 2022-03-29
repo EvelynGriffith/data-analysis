@@ -29,7 +29,7 @@ def transform_string_to_number_list(data_text: str) -> List[float]:
         # extract the ordered pair this line
         # the ordered pair has the format:
         # (Date, population count in thousands of persons)
-        ordered_pair = line.split("'")
+        ordered_pair = line.split(",")
         # convert the population count to a float and store it
         # in the data_number_list
         data_number_list.append(float(ordered_pair[1]))
