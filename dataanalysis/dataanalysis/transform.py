@@ -19,7 +19,7 @@ from typing import List
 # 1979-01-01,88.100
 # 1980-01-01,88.869
 
-# TODO: Fix the defect in the following function
+# Fix the defect in the following function
 
 def transform_string_to_number_list(data_text: str) -> List[float]:
     """Transform a string of (date, float) values to a list of floats."""
