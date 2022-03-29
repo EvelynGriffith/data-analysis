@@ -75,7 +75,7 @@ def compute_variance(numbers: List[float]) -> float:
     for d in diff:
         squared_diff.append(d**2)
     sum_squared_diff = sum(squared_diff)
-    variance = sum_squared_diff/len(num)
+    variance = sum_squared_diff/len(numbers))
     return variance
     # compute the squared differences
     # calculate the variance
