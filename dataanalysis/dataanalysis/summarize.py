@@ -26,6 +26,8 @@ def compute_median(numbers: List[float]) -> float:
     """Compute the median of a list of numbers."""
     # sort the numbers in an "in place" fashion
     n = len(numbers)
+    if n == 0:
+        return float("NaN")
     numbers.sort()
     # as long as the computation will not be an
     # undefined division by zero, compute the median
@@ -39,7 +41,7 @@ def compute_median(numbers: List[float]) -> float:
         m1 = int(m1) - 1
         m2 = int(m2) - 1
         # compute the median value
-        median = (numbers[m1] + numbers[m2])/2
+        median = ((numbers[m1] + numbers[m2])/2)
     else:
         # case: the count of the values is odd
         m = (n+1)/2
