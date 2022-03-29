@@ -94,8 +94,8 @@ This function is called then compute_difference function which takes a variable 
 
 ### What are some examples of computer science skills that were important 30 years ago but are less important to learn now? Why are they less important now?
 
-I think the creation of poetry shells as well as the installation of dependencies was much harder and had to be coded from scratch whereas now we just have to say poetry install and it does all of that for us.
+I think the creation of poetry shells as well as the installation of dependencies was much harder and had to be coded from scratch whereas now we just have to say poetry install and it does all of that for us. My mother told me that she took weeks to code certain structures that we now have all of the installation tools for, such as docker. Docker does amazing things that would take weeks of work in the past.
 
 ### What are some examples of computer science skills that were important 30 years ago but are just as important to learn now? Why are they as important now as in the past?
 
-I think learning the basics of how a computer "thinks" is always going to be important and learning how to think in the way that computer logic functions is never going to go away.
+I think learning the basics of how a computer "thinks" is always going to be important and learning how to think in the way that computer logic functions is never going to go away. I think that this is important becuase it is a basis for all computer languages and even if the languages change, the way that a computer functions, in the sense of its binary code and computational makeup, might not. The idea that computers take in only binary code, as in 0 and 1, I dont think will change anytime soon, and so learning how this works and how to communicate with a computer is a very useful skill.
