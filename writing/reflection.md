@@ -73,7 +73,7 @@ This function starts off with the function definition line. This function called
     return data_number_list
 ```
 
-This function is called the transform_string_to_number_list function. It takes a variable called data_text which is a string and then return it as a list of float values. This starts with teh variable called data_number_list which is an empty string. This will then be passed into a for loop which takes the variable called line and then splits the lines within data_text this line will then be split again into individual entities and appended to the data_number_list. This list will then be returned.
+This function is called the transform_string_to_number_list function. It takes a variable called data_text which is a string and then returns a list of float values which will be called data_number_list once it is defined within the function. This starts with the variable called data_number_list which is an empty string. This will then be passed into a for loop which takes the variable called line and then splits the lines within data_text. This will make it so that the file only has single lines now, but then line will then be split again into individual entities and appended to the data_number_list. This list will then be returned as a now not empty list called data_number_list.
 
 #### What is the purpose of the following function in the context of the `summarize` module?
 
@@ -88,13 +88,13 @@ This function is called the transform_string_to_number_list function. It takes a
     return differences
 ```
 
-This function is called then compute_difference function which takes a variable called number which is a list of floats and then returns another list of floats called differences. This will first compute the mean of the variable called numbers by calling on the compute_mean function. It will the do a for loop that takes the number within numbers and appends it to the list called differences.
+This function is called then compute_difference function which takes a variable called number which is a list of floats and then returns another list of floats called differences. This will first compute the mean of the variable called numbers by calling on the compute_mean function. It will then do a for loop that takes a single number within the list of numbers and appends it to the list called differences. This list, differences that is, will then be returned through the return statement at the bottom of the function.
 
 ## Professional Development
 
 ### What are some examples of computer science skills that were important 30 years ago but are less important to learn now? Why are they less important now?
 
-I think the creation of poetry shells as well as the installation of dependencies was much harder and had to be coded from scratch whereas now we just have to say poetry install and it does all of that for us. My mother told me that she took weeks to code certain structures that we now have all of the installation tools for, such as docker. Docker does amazing things that would take weeks of work in the past.
+I think the creation of poetry shells as well as the installation of dependencies was much harder and had to be coded from scratch whereas now we just have to say poetry install and it does all of that for us. My mother told me that she took weeks to code certain structures that we now have all of the installation tools for, such as docker. Docker does amazing things that would take weeks of work in the past, and I think that it makes a huge difference because now scientists can spend time creating new programs instead of working through those tedious processes that, while important, are not necessarily helping the human race on our way to further discussion.
 
 ### What are some examples of computer science skills that were important 30 years ago but are just as important to learn now? Why are they as important now as in the past?
 
