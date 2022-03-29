@@ -21,6 +21,7 @@ from typing import List
 
 # Fix the defect in the following function
 
+
 def transform_string_to_number_list(data_text: str) -> List[float]:
     """Transform a string of (date, float) values to a list of floats."""
     data_number_list = []

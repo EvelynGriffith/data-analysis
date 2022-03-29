@@ -36,15 +36,15 @@ def compute_median(numbers: List[float]) -> float:
         # get the two indices that are before and after the middle
         # convert to an integer to prepare for indexing
         # adjust for the fact that lists index starting at 0
-        m1 = n/2
-        m2 = (n/2) + 1
+        m1 = n / 2
+        m2 = (n / 2) + 1
         m1 = int(m1) - 1
         m2 = int(m2) - 1
         # compute the median value
-        median = ((numbers[m1] + numbers[m2])/2)
+        median = (numbers[m1] + numbers[m2]) / 2
     else:
         # case: the count of the values is odd
-        m = (n+1)/2
+        m = (n + 1) / 2
         # convert to an integer to prepare for indexing
         # adjust for the fact that lists index starting at 0
         m = int(m) - 1
@@ -52,6 +52,7 @@ def compute_median(numbers: List[float]) -> float:
         # if the list was empty, then return a median that is "not a number"
     # return the computed median value
     return median
+
 
 def compute_difference(numbers: List[float]) -> List[float]:
     """Compute difference for each value from the calculated mean."""
@@ -61,8 +62,8 @@ def compute_difference(numbers: List[float]) -> List[float]:
     mean = compute_mean(numbers)
     diff = []
     for num in numbers:
-        diff.append(num-mean)
-    return (diff)
+        diff.append(num - mean)
+    return diff
     # compute the differences from the mean
     # return the computed differences from the mean
 
@@ -73,9 +74,9 @@ def compute_variance(numbers: List[float]) -> float:
     diff = compute_difference(numbers)
     squared_diff = []
     for d in diff:
-        squared_diff.append(d**2)
+        squared_diff.append(d ** 2)
     sum_squared_diff = sum(squared_diff)
-    variance = sum_squared_diff/len(numbers)
+    variance = sum_squared_diff / len(numbers)
     return variance
     # compute the squared differences
     # calculate the variance
@@ -87,6 +88,6 @@ def compute_standard_deviation(numbers: List[float]) -> float:
     # call the function to calculate the variance
     vari = compute_variance(numbers)
     # calculate the standard deviation as the square root of the variance
-    stand_dev = vari**0.5
+    stand_dev = vari ** 0.5
     # return the calculated standard devision of the list of numbers
     return stand_dev
